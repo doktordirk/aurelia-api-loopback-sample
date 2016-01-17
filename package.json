@@ -29,29 +29,29 @@
   },
   "homepage": "https://github.com/spoonx/aurelia-auth#readme",
   "dependencies": {
-    "compression": "^1.0.3",
-    "cors": "^2.5.2",
-    "errorhandler": "^1.1.1",
-    "loopback": "^2.26.2",
-    "loopback-boot": "^2.6.5",
-    "loopback-datasource-juggler": "^2.44.0",
-    "serve-favicon": "^2.0.1"
+    "compression": "^1.6.0",
+    "cors": "^2.7.1",
+    "errorhandler": "^1.4.2",
+    "loopback": "^3.0.0-alpha.1",
+    "loopback-boot": "^2.16.0",
+    "loopback-datasource-juggler": "^3.0.0-alpha.1",
+    "serve-favicon": "^2.3.0"
   },
   "optionalDependencies": {
-    "loopback-component-explorer": "^2.1.1"
+    "loopback-component-explorer": "^2.2.0"
   },
   "devDependencies": {
-    "aurelia-tools": "^0.1.17",
-    "conventional-changelog": "0.0.11",
-    "gulp": "^3.8.10",
+    "aurelia-tools": "^0.1.18",
+    "conventional-changelog": "0.0.17",
+    "gulp": "^3.9.00",
     "gulp-bump": "^1.0.0",
     "gulp-jshint": "^2.0.0",
     "gulp-yuidoc": "^0.1.2",
-    "jshint": "^2.8.0",
+    "jshint": "^2.9.1",
     "jshint-stylish": "^2.1.0",
     "require-dir": "^0.3.0",
-    "run-sequence": "^1.0.2",
-    "yargs": "^2.1.1"
+    "run-sequence": "^1.1.5",
+    "yargs": "^3.32.0"
   },
   "directories": {
     "doc": "doc"
