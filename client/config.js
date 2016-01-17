@@ -31,6 +31,7 @@ System.config({
     "core-js": "npm:core-js@1.2.6",
     "fetch": "github:github/fetch@0.10.1",
     "font-awesome": "npm:font-awesome@4.5.0",
+    "spoonx/aurelia-api": "github:spoonx/aurelia-api@2.0.2",
     "text": "github:systemjs/plugin-text@0.0.3",
     "github:jspm/nodelibs-assert@0.1.0": {
       "assert": "npm:assert@1.3.0"
@@ -41,8 +42,18 @@ System.config({
     "github:jspm/nodelibs-process@0.1.2": {
       "process": "npm:process@0.11.2"
     },
+    "github:jspm/nodelibs-querystring@0.1.0": {
+      "querystring": "npm:querystring@0.2.0"
+    },
     "github:jspm/nodelibs-util@0.1.0": {
       "util": "npm:util@0.10.3"
+    },
+    "github:spoonx/aurelia-api@2.0.2": {
+      "aurelia-dependency-injection": "npm:aurelia-dependency-injection@1.0.0-beta.1",
+      "aurelia-fetch-client": "npm:aurelia-fetch-client@1.0.0-beta.1.0.2",
+      "aurelia-framework": "npm:aurelia-framework@1.0.0-beta.1.0.8",
+      "extend": "npm:extend@3.0.0",
+      "querystring": "github:jspm/nodelibs-querystring@0.1.0"
     },
     "github:twbs/bootstrap@3.3.6": {
       "jquery": "github:components/jquery@2.2.0"
