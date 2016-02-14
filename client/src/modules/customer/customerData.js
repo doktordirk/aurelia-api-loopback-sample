@@ -1,5 +1,5 @@
-import {inject} from 'aurelia-framework';
-import {Endpoint} from 'spoonx/aurelia-api';
+import { inject } from 'aurelia-framework';
+import { Endpoint} from 'spoonx/aurelia-api';
 
 @inject(Endpoint.of())
 export class CustomerData {
@@ -15,15 +15,15 @@ export class CustomerData {
   }
 
   getById(id) {
-    return this.apiEndpoint.find(this.modelPath, id); 
+    return this.apiEndpoint.find(this.modelPath, id);
   }
-  
+
   getAll() {
-    return this.apiEndpoint.find(this.modelPath);  
+    return this.apiEndpoint.find(this.modelPath);
   }
 
   delete(customer) {
-    return this.apiEndpoint.destroy(this.modelPath, customer.id)
+    return this.apiEndpoint.destroy(this.modelPath, customer.id);
   }
 
   save(customer) {
@@ -31,8 +31,7 @@ export class CustomerData {
 
     if (customer.id) {
       request = this.apiEndpoint.update(this.modelPath, customer.id, customer);
-    }
-    else {
+    } else {
       request = this.apiEndpoint.create(this.modelPath, customer);
     }
 

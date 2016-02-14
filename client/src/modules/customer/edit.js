@@ -1,6 +1,6 @@
-import {inject} from 'aurelia-framework';
-import {CustomerData} from './customerData';
-import {Router} from 'aurelia-router';
+import { inject } from 'aurelia-framework';
+import { CustomerData } from './customerData';
+import { Router } from 'aurelia-router';
 
 @inject(CustomerData, Router)
 export class Edit {
@@ -10,11 +10,11 @@ export class Edit {
     this.router = router;
   }
 
-  cancel(){
+  cancel() {
     return this._loadCustomer(this.customer.id);
   }
 
-  goBack(){
+  goBack() {
     window.history.back();
   }
 
@@ -23,26 +23,26 @@ export class Edit {
     this.customer = {};
 
     if (params.id) {
-       return this._loadCustomer(params.id);
+      return this._loadCustomer(params.id);
     }
   }
 
-  _loadCustomer(id){
+  _loadCustomer(id) {
     return this.data.getById(id)
-        .then(customer => {
-          this.original = JSON.parse(JSON.stringify(customer));
-          return this.customer = customer;
-        });
+      .then(customer => {
+        this.original = JSON.parse(JSON.stringify(customer));
+        return (this.customer = customer);
+      });
   }
 
   delete() {
     this.data.delete(this.customer)
-      .then(()=>{
-        this.router.navigate("list");
-      })
+      .then(() => {
+        this.router.navigate('list');
+      });
   }
 
-  get isUnchanged(){
+  get isUnchanged() {
     return this.areEqual(this.customer, this.original);
   }
 
@@ -50,7 +50,7 @@ export class Edit {
     this.data.save(this.customer)
       .then(customer => {
         this.original = JSON.parse(JSON.stringify(customer));
-        this.router.navigate("list");
+        this.router.navigate('list');
       });
   }
 
