@@ -1,7 +1,7 @@
 import { inject } from 'aurelia-framework';
 import { Endpoint} from 'spoonx/aurelia-api';
 
-@inject(Endpoint.of())
+@inject(Endpoint.of())  // the default endpoint
 export class CustomerData {
 
   model = 'customers';

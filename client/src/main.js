@@ -6,6 +6,7 @@ export function configure(aurelia) {
     .developmentLogging()
     .plugin('spoonx/aurelia-api', config => {
       config
+      .registerEndpoint('github', 'https://api.github.com/')
         .registerEndpoint('api', 'http://localhost:3000/api/')
         .setDefaultEndpoint('api');
     });
