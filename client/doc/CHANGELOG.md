@@ -1,3 +1,13 @@
+<a name"1.1.1"></a>
+### 1.1.1 (2016-02-15)
+
+
+#### Bug Fixes
+
+* **project:** missing dependency ([cf22d121](http://github.com/aurelia/skeleton-navigation/commit/cf22d121))
+* **users:** use aurelia-api for github users page ([b1cc6643](http://github.com/aurelia/skeleton-navigation/commit/b1cc6643))
+
+
 ### 1.0.0-beta.1.0.4 (2015-12-22)
 
 * update dependencies
