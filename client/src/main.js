@@ -6,12 +6,11 @@ export function configure(aurelia) {
     .developmentLogging()
     .plugin('spoonx/aurelia-api', config => {
       config
-      .registerEndpoint('github', 'https://api.github.com/')
+        .registerEndpoint('github', 'https://api.github.com/')
         .registerEndpoint('api', 'http://localhost:3000/api/')
         .setDefaultEndpoint('api');
-    });
-  //Uncomment the line below to enable animation.
-  aurelia.use.plugin('aurelia-animator-css');
+    })
+    .plugin('aurelia-animator-css');
   //if the css animator is enabled, add swap-order="after" to all router-view elements
 
   //Anyone wanting to use HTMLImports to load views, will need to install the following plugin.

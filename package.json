@@ -40,10 +40,10 @@
     "serve-favicon": "^2.3.0"
   },
   "optionalDependencies": {
-    "loopback-component-explorer": "^2.2.0"
+    "loopback-component-explorer": "^2.4.0"
   },
   "devDependencies": {
-    "aurelia-tools": "^0.1.18",
+    "aurelia-tools": "^0.1.19",
     "conventional-changelog": "0.0.17",
     "eslint-config-strongloop": "^1.0.2",
     "eslint-plugin-json": "^1.2.0",
