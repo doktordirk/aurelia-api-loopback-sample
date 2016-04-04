@@ -82,10 +82,16 @@ Bundling is performed by [Aurelia Bundler](http://github.com/aurelia/bundler). A
 You can also unbundle using the command bellow:
 
   ```shell
-  gulp unbundle
+    gulp unbundle
+  ```
+
+To start the bundled app, execute the following command:
+
+  ```shell
+    gulp serve-bundle
   ```
 #### Configuration
-The configuration is done by ```bundles.json``` file.
+The configuration is done by ```bundles.js``` file.
 ##### Optional
 Under ```options``` of ```dist/aurelia``` add ```rev: true``` to add bundle file revision/version.
 
@@ -143,5 +149,5 @@ A gulp task is already configured for that. Use the following command to export 
   ```
 The app will be exported into ```export``` directory preserving the directory structure.
 #### Configuration
-The configuration is done by ```bundles.json``` file.
-In addition, ```export.json``` file is available for including individual files.
+The configuration is done by ```bundles.js``` file.
+In addition, ```export.js``` file is available for including individual files.

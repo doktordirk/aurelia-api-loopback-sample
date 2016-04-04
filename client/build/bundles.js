@@ -29,7 +29,7 @@ module.exports = {
         "aurelia-logging-console",
         "bootstrap",
         "bootstrap/css/bootstrap.css!text",
-		    "spoonx/aurelia-api"
+        "aurelia-api"
       ],
       "options": {
         "inject": true,
