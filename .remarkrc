@@ -2,22 +2,23 @@
   "output": true,
   "plugins": {
     "lint": {
-      "no-multiple-toplevel-headings": false,
-      "list-item-indent": false,
       "maximum-line-length": false,
-      "no-missing-blank-lines": false,
-      "table-pipes": false,
+      "heading-style": "atx",
       "no-duplicate-headings": false,
       "no-undefined-references": false,
       "no-shortcut-reference-link": false,
-      "no-heading-content-indent": false,
-      "no-heading-indent": true,
       "no-heading-punctuation": ".,;:!",
-      "rule-style": false
+      "list-item-indent": false
     }
   },
   "settings": {
     "gfm": true,
-    "bullet": "*"
+    "bullet": "*",
+    "closeAtx": false,
+    "fences": true,
+    "listItemIndent": "1",
+    "rule": "-",
+    "ruleRepetition": 10,
+    "ruleSpaces": false
   }
 }
