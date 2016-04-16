@@ -1,4 +1,5 @@
 import 'bootstrap';
+import 'fetch';  // fetch polyfill
 
 export function configure(aurelia) {
   aurelia.use

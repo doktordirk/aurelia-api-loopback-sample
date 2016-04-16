@@ -1,5 +1,3 @@
-import 'fetch';
-
 export class Index {
 
   configureRouter(config, router) {
