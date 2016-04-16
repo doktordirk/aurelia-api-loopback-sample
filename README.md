@@ -2,9 +2,8 @@
 
 [![Join the chat at https://gitter.im/SpoonX/Dev](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/SpoonX/Dev?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 
-This is a skeleton for an [Aurelia](http://aurelia.io/) client using [spoonx/aurelia-api](https://github.com/SpoonX/aurelia-api) for access to a [Strongloop](http://loopback.io/) loopback api server based on paul van bladel's [aurelia-loopback-sample](https://github.com/paulvanbladel/aurelia-loopback-sample/).
+This is a skeleton for an [Aurelia](http://aurelia.io/) client using [spoonx/aurelia-api](https://github.com/SpoonX/aurelia-api) for rest access to a [Strongloop](http://loopback.io/) loopback api server.
 
-Comments on [aurelia](https://gitter.im/aurelia/discuss) or [spoonx/dev gitter](https://gitter.im/SpoonX/Dev) and push requests welcome.
 ..
 
 ## Installation instructions
@@ -17,12 +16,6 @@ cd client
 npm install
 jspm install
 ```
-
-### Optional
-
-Install loopback-component-explorer with `npm install loopback-component-explorer --save-dev` to use the loopback api explorer (recommended, free registration needed).
-
-Use `npm install strongloop -g` for the [Strongloop](http://loopback.io/) suite (recommended).
 
 ## How to run the sample
 
@@ -43,27 +36,18 @@ Browse to [http://localhost:9000](http://localhost:9000) to see the app. You can
 /common
 ```
 
-A [loopback](https://docs.strongloop.com/display/public/LB/LoopBack) api server with a user and a customer model with ACL.
+A [loopback](https://docs.strongloop.com/display/public/LB/LoopBack) api server with a customer model.
 
-```js
-user hasMany customers
-customer belongsTo user
-```
-
-Unauthorized users only can list the customers. Authorized users additionally can manage their own customers. See the models in common/models.
-Users can signup & login with verified emails or third-party providers (facebook). After signup with email, a verification emails is send. Users can also request an email to reset their password.
-
-A local file is used as database. Have a peek at `mydata.json` to gain some insight.
-
-By default loopback uses session token for authorization.
+A local file is used as database. Have a peek at [server/mydata.json](server/mydata.json) to gain some insight.
 
 #### Client
 
 ```sh
 /client
+/client/src/modules/customers
 ```
 
-An aurelia client app with authorized pages for user profile and customer management and unauthorized pages for login, signup and customer listing.
+An aurelia client app. The aurelia-api rest client is configured in [scr/main.js](src/main.js) and used in [client/scr/modules/customer/customerData](client/scr/modules/customer/customerData) for rest access to server's customer api.
 
 ## Support
 
