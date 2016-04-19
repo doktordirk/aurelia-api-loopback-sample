@@ -4,8 +4,6 @@
 
 This is a skeleton for an [Aurelia](http://aurelia.io/) client using [spoonx/aurelia-api](https://github.com/SpoonX/aurelia-api) for rest access to a [Strongloop](http://loopback.io/) loopback api server.
 
-..
-
 ## Installation instructions
 
 ```sh
@@ -25,29 +23,25 @@ In the root folder type:
 npm start
 ```
 
-Browse to [http://localhost:9000](http://localhost:9000) to see the app. You can make changes in the code found under `src` and the browser should auto-refresh itself as you save files.
+This builds the aurelia-client and serves client and api. Open `http://localhost:9000` to open the client in your browser.
 
 ## What's in it
 
-### Server
+### Loopback server
 
-```sh
-/server
-/common
-```
+#### [/server](/server)
 
-A [loopback](https://docs.strongloop.com/display/public/LB/LoopBack) api server with a customer model.
+A [loopback](https://docs.strongloop.com/display/public/LB/LoopBack) api server. A local file is used as database. Have a peek at [mydata.json](mydata.json) to gain some insight.
 
-A local file is used as database. Have a peek at [server/mydata.json](server/mydata.json) to gain some insight.
+#### [/common](/common)
 
-#### Client
+The customer model with firstName and lastName properties.
 
-```sh
-/client
-/client/src/modules/customers
-```
+### Aurelia client
 
-An aurelia client app. The aurelia-api rest client is configured in [scr/main.js](src/main.js) and used in [client/scr/modules/customer/customerData](client/scr/modules/customer/customerData) for rest access to server's customer api.
+#### [/client](/client)
+
+An aurelia client app using aurelia-api for customer management.
 
 ## Support
 

@@ -14,9 +14,9 @@
     "RoleMapping": {},
     "Role": {},
     "customer": {
-    "1": "{\"firstName\":\"paul\",\"lastName\":\"van bladel\",\"id\":1}",
-      "2": "{\"firstName\":\"annabel\",\"lastName\":\"van bladel\",\"id\":2}",
-      "3": "{\"firstName\":\"suzanne\",\"lastName\":\"van bladel\",\"id\":3}"
+    "1": "{\"firstName\":\"Roy\",\"lastName\":\"Stein\",\"id\":1}",
+      "2": "{\"firstName\":\"Annabel\",\"lastName\":\"User\",\"id\":2}",
+      "3": "{\"firstName\":\"Suzanne\",\"lastName\":\"Klabe\",\"id\":3}"
     }
   }
 }
