@@ -4,7 +4,7 @@
   "description": "Sample aurelia-api loopback application",
   "main": "server/server.js",
   "scripts": {
-    "start": "gulp --gulpfile=\"client/gulpfile.js\" watch",
+    "start": "node .",
     "pretest": "gulp lint"
   },
   "repository": {
