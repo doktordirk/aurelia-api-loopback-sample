@@ -6,10 +6,10 @@ import { Router } from 'aurelia-router';
 export class List {
   heading = 'Customer management';
 
-  customers = [];
+  customerList = [];
 
-  constructor(customer, router) {
-    this.customer = customer;
+  constructor(customers, router) {
+    this.customers = customers;
     this.router = router;
   }
 
@@ -22,7 +22,7 @@ export class List {
   }
 
   activate() {
-    return this.customer.getAll()
-      .then(customers => this.customers = customers);
+    return this.customers.getAll()
+      .then(customerList => this.customerList = customerList);
   }
 }
