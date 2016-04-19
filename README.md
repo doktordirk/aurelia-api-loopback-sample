@@ -1,5 +1,7 @@
 # Aurelia-api-loopback-sample
 
+As `ES6` or `Typescript` or `Webpack` version
+
 [![Join the chat at https://gitter.im/SpoonX/Dev](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/SpoonX/Dev?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 
 This is a skeleton for an [Aurelia](http://aurelia.io/) client using [spoonx/aurelia-api](https://github.com/SpoonX/aurelia-api) for rest access to a [Strongloop](http://loopback.io/) loopback api server.
@@ -10,16 +12,29 @@ This is a skeleton for an [Aurelia](http://aurelia.io/) client using [spoonx/aur
 git clone https://github.com/dirkeisinger/aurelia-api-loopback-sample
 cd aurelia-api-loopback-sample
 npm install
+
 cd client
+or
+cd client-ts
+or
+cd client-wp
+
 npm install
+
+and for es6 and wp
+
 jspm install
 ```
 
 ## How to run the sample
 
-In the root folder type:
+Type
 
 ```sh
+in the client or client-ts folder
+gulp watch
+
+or in the client-wp folder
 npm start
 ```
 
