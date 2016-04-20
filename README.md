@@ -1,44 +1,43 @@
 # Aurelia-api-loopback-sample
 
-As `ES6` or `Typescript` or `Webpack` version
-
 [![Join the chat at https://gitter.im/SpoonX/Dev](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/SpoonX/Dev?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
+
+**Aurelia client included as [ES6-SystemJs](/client), [ES6-Webpack](/client-wp) and [Typescript-SystemJs](/client-ts) versions**
 
 This is a skeleton for an [Aurelia](http://aurelia.io/) client using [spoonx/aurelia-api](https://github.com/SpoonX/aurelia-api) for rest access to a [Strongloop](http://loopback.io/) loopback api server.
 
 ## Installation instructions
 
+### For ES6-SystemJs:
+
 ```sh
 git clone https://github.com/dirkeisinger/aurelia-api-loopback-sample
 cd aurelia-api-loopback-sample
 npm install
-
 cd client
-or
-cd client-ts
-or
-cd client-wp
-
 npm install
-
-and for es6 and wp
-
 jspm install
 ```
 
-## How to run the sample
-
-Type
+To run the sample type in the client folder:
 
 ```sh
-in the client or client-ts folder
 gulp watch
-
-or in the client-wp folder
-npm start
 ```
 
-This builds the aurelia-client and serves client and api. Open `http://localhost:9000` to open the client in your browser.
+This builds the aurelia-client and serves client and api.
+
+
+### For Typescript-SystemJs:
+
+- use client-ts
+
+### For ES6-Webpack:
+
+- use client-wp
+- no 'jspm install' naturally
+- run with `npm start`
+
 
 ## What's in it
 
@@ -54,7 +53,7 @@ The customer model with firstName and lastName properties.
 
 ### Aurelia client
 
-#### [/client](/client)
+#### [/client](/client) [/client-ts](/client-ts)  [/client-wp](/client-wp)
 
 An aurelia client app using aurelia-api for customer management.
 
