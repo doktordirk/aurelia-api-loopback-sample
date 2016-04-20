@@ -1,12 +1,12 @@
 import { inject } from 'aurelia-framework';
 import { Endpoint} from 'aurelia-api';
 
-@inject(Endpoint.of('api'))  // the 'api' endpoint
+@inject(Endpoint.of())  // the 'api' endpoint
 export class Customers {
 
   model = 'customers';
   apiEndpoint;
-  
+
   constructor(rest: Endpoint) {
     this.apiEndpoint = rest;
   }
