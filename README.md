@@ -4,7 +4,7 @@
 
 **Aurelia client included as [ES6-SystemJs](/client), [ES6-Webpack](/client-wp) and [Typescript-SystemJs](/client-ts) versions**
 
-This is a skeleton for an [Aurelia](http://aurelia.io/) client using [spoonx/aurelia-api](https://github.com/SpoonX/aurelia-api) for rest access to a [Strongloop](http://loopback.io/) loopback api server.
+This is a skeleton for an [Aurelia](http://aurelia.io/) client using [aurelia-api](https://github.com/SpoonX/aurelia-api) for rest access to a [Strongloop](http://loopback.io/) loopback api server.
 
 The aurelia-api documentantion you'll find at [aurelia-api.spoonx.org](http://aurelia-api.spoonx.org/).
 
