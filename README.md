@@ -15,7 +15,7 @@ The aurelia-api documentantion you'll find at [aurelia-api.spoonx.org](http://au
 For typescript, replace `cd client` below with `cd client-ts`.
 
 ```sh
-git clone https://github.com/dirkeisinger/aurelia-api-loopback-sample
+git clone https://github.com/doktordirk/aurelia-api-loopback-sample
 cd aurelia-api-loopback-sample
 npm install
 cd client
@@ -34,7 +34,7 @@ This builds the aurelia-client and serves the client and the api server. Browse 
 ### For ES6-Webpack
 
 ```sh
-git clone https://github.com/dirkeisinger/aurelia-api-loopback-sample
+git clone https://github.com/doktordirk/aurelia-api-loopback-sample
 cd aurelia-api-loopback-sample
 npm install
 cd client-wp
