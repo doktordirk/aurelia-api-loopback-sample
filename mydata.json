@@ -14,7 +14,7 @@
     "RoleMapping": {},
     "Role": {},
     "customer": {
-    "1": "{\"firstName\":\"Roy\",\"lastName\":\"Stein\",\"id\":1}",
+      "1": "{\"firstName\":\"Roy\",\"lastName\":\"Stein\",\"id\":1}",
       "2": "{\"firstName\":\"Annabel\",\"lastName\":\"User\",\"id\":2}",
       "3": "{\"firstName\":\"Suzanne\",\"lastName\":\"Klabe\",\"id\":3}"
     }

@@ -24,10 +24,11 @@ To run the app, follow these steps.
   > **Note:** jspm must be installed globally, but a local version will also be installed to ensure a compatible version is used for the project.
 
   > **Note:** jspm queries GitHub to install semver packages, but GitHub has a rate limit on anonymous API requests. It is advised that you configure jspm with your GitHub credentials in order to avoid problems. You can do this by executing `jspm registry config github` and following the prompts. If you choose to authorize jspm by an access token instead of giving your password (see GitHub `Settings > Personal Access Tokens`), `public_repo` access for the token is required.
-5. Install the client-side dependencies with jspm:
+5. Install the client-side dependencies with jspm and typings:
 
   ```shell
   jspm install -y
+  typings i
   ```
   >**Note:** Windows users, if you experience an error of "unknown command unzip" you can solve this problem by doing `npm install -g unzip` and then re-running `jspm install`.
 6. To run the app, execute the following command:

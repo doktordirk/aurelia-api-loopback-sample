@@ -1,13 +1,13 @@
 import { inject } from 'aurelia-framework';
-import { Endpoint} from 'aurelia-api';
+import { Endpoint, Rest} from 'aurelia-api';
 
 @inject(Endpoint.of('api'))  // the 'api' endpoint
 export class Customers {
 
-  model = 'customers';
-  apiEndpoint;
+  model: string = 'customers';
+  apiEndpoint: Rest;
 
-  constructor(rest: Endpoint) {
+  constructor(rest: Rest) {
     this.apiEndpoint = rest;
   }
 
@@ -15,7 +15,7 @@ export class Customers {
     return this.apiEndpoint.find(this.model, id);
   }
 
-  getAll(criteria: Object) {
+  getAll(criteria?: Object) {
     return this.apiEndpoint.find(this.model, criteria);
   }
 
@@ -24,7 +24,7 @@ export class Customers {
   }
 
   save(customer: any) {
-    let request;
+    let request: Promise<Object>;
 
     if (customer.id) {
       request = this.apiEndpoint.update(this.model, customer.id, customer);

@@ -4,11 +4,11 @@ import { Router } from 'aurelia-router';
 
 @autoinject()
 export class Edit {
-  customers;
-  router;
+  customers: Customers;
+  router: Router;
 
-  customer;
-  original;
+  customer: Object;
+  original: string;
 
   constructor(customers: Customers, router: Router) {
     this.customers = customers;

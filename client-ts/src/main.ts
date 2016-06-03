@@ -1,12 +1,13 @@
 import 'bootstrap';
 import 'fetch';  // fetch polyfill
 import {Aurelia} from 'aurelia-framework';
+import {Config} from 'aurelia-api';
 
 export function configure(aurelia: Aurelia) {
   aurelia.use
     .standardConfiguration()
     .developmentLogging()
-    .plugin('aurelia-api', config => {
+    .plugin('aurelia-api', (config: Config) => {
       config
         .registerEndpoint('github', 'https://api.github.com/')
         .registerEndpoint('api', 'http://localhost:3000/api/')

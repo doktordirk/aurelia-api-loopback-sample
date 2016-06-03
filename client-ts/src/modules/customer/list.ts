@@ -4,12 +4,12 @@ import { Router } from 'aurelia-router';
 
 @autoinject()
 export class List {
-  heading = 'Customer management';
+  heading: string = 'Customer management';
 
-  customerList = [];
+  customerList: Object = [];
 
-  customers;
-  router;
+  customers: Customers;
+  router: Router;
 
   constructor(customers: Customers, router: Router) {
     this.customers = customers;
