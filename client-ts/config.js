@@ -1,6 +1,6 @@
 System.config({
   defaultJSExtensions: true,
-  transpiler: "none",
+  transpiler: false,
   paths: {
     "*": "dist/*",
     "github:*": "jspm_packages/github/*",
@@ -15,7 +15,7 @@ System.config({
   },
   map: {
     "aurelia-animator-css": "npm:aurelia-animator-css@1.0.0-beta.1.2.1",
-    "aurelia-api": "npm:aurelia-api@3.0.0-rc3",
+    "aurelia-api": "npm:aurelia-api@3.0.0-rc4",
     "aurelia-bootstrapper": "npm:aurelia-bootstrapper@1.0.0-beta.1.2.1",
     "aurelia-fetch-client": "npm:aurelia-fetch-client@1.0.0-beta.1.2.5",
     "aurelia-framework": "npm:aurelia-framework@1.0.0-beta.1.2.5",
@@ -41,7 +41,7 @@ System.config({
       "aurelia-pal": "npm:aurelia-pal@1.0.0-beta.1.2.2",
       "aurelia-templating": "npm:aurelia-templating@1.0.0-beta.1.2.7"
     },
-    "npm:aurelia-api@3.0.0-rc3": {
+    "npm:aurelia-api@3.0.0-rc4": {
       "aurelia-dependency-injection": "npm:aurelia-dependency-injection@1.0.0-beta.1.2.3",
       "aurelia-fetch-client": "npm:aurelia-fetch-client@1.0.0-beta.1.2.5",
       "extend": "npm:extend@3.0.0",
@@ -163,7 +163,7 @@ System.config({
       "aurelia-task-queue": "npm:aurelia-task-queue@1.0.0-beta.1.2.1"
     },
     "npm:font-awesome@4.6.3": {
-      "css": "github:systemjs/plugin-css@0.1.22"
+      "css": "github:systemjs/plugin-css@0.1.23"
     }
   }
 });
